@@ -4,16 +4,30 @@
    <meta charset="UTF-8">
    <title><Code - Tabela Sudeste - Sul></title>
 <style>
+h1.center{
+	text-align: center;
+}
 table, th, td{
 	border: 1px solid black;
+    text-align: center; 
+}
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+i { 
+  font-style: italic;
+}
+b { 
+  font-weight: bold;
 }
 </style>
 </head>
 <BODY>
-	<h1>Tabela Formatada</h1>
+	<h1 class="center">Tabela Formatada</h1>
 
-	<table>
-		<caption>Sul x Sudeste</caption>
+	<table class="center" style="width:400px">
+		<caption><i><b>Sul x Sudeste</b></i></caption>
 		<tr>
 			<th>Estados</th>
 			<th>Cidades</th>
@@ -24,79 +38,74 @@ table, th, td{
 			<td>São Paulo</td>
 			<td>
 				<ul>
-					<li>São Paulo</li>
-					<li>Guarulhos</li>
-					<li>Campinas</li>
+					<li><i>São Paulo</i></li>
+					<li><i>Guarulhos</i></li>
+					<li><i>Campinas</i></li>
 				</ul>
 			</td>
-			<td>Sudeste</td>
+			<td rowspan="4">Sudeste</td>
 		</tr>
 		<tr>
 			<td>Rio de Janeiro</td>
 			<td>
 				<ol style="list-style-type:upper-roman">
-					<li>Rio de Janeiro</li>
-					<li>São Gonçalo</li>
-					<li>Duque de Caxias</li>
+					<li><i>Rio de Janeiro</i></li>
+					<li><i>São Gonçalo</i></li>
+					<li><i>Duque de Caxias</i></li>
 				</ol>
 	        </td>
-	        <td>Sudeste</td>
 		</tr>
 			<tr>
 			<td>Minas Gerais</td>
 			<td>
 				<ol start= "a">
-					<li>Belo Horizonte</li>
-					<li>Uberlândia</li>
-					<li>Contagem</li>
+					<li><i>Belo Horizonte</i></li>
+					<li><i>Uberlândia</i></li>
+					<li><i>Contagem</i></li>
 				</ol>
 			</td>
-			<td>Sudeste</td>
 		</tr>
 			<tr>
 			<td>Espirito Santo</td>
 			<td>
 				<ol style="list-style-type:lower-alpha">
-					<li>Vitória</li>
-					<li>Serra</li>
-					<li>Cariacica</li>
+					<li><i>Vitória</i></li>
+					<li><i>Serra</i></li>
+					<li><i>Cariacica</i></li>
 				</ol>
 			</td>
-			<td>Sudeste</td>
 		</tr>
 	
 			<tr>
 			<td>Rio Grande do Sul</td>
 			<td>
 				<ul>
-					<li>Porto Alegre</li>
-					<li>Caxias do Suk</li>
-					<li>Pelotas</li>
+					<li><i>Porto Alegre</i></li>
+					<li><i>Caxias do Sul</i></li>
+					<li><i>Pelotas</i></li>
 				</ul>
 			</td>
-			<td>Sul</td>
+			<td rowspan="3">Sul</td>
 		</tr>
 			<tr>
 			<td>Santa Catarina</td>
 			<td>
 				<ul>
-					<li>Florianópolis</li>
-					<li>Joinville</li>
-					<li>Blumenau</li>
+					<li><i>Florianópolis</i></li>
+					<li><i>Joinville</i></li>
+					<li><i>Blumenau</i></li>
 				</ul>
 			</td>
-			<td>Sul</td>
 		</tr>
 			<tr>
 			<td>Paraná</td>
 			<td>
 				<ul>
-					<li>Curitiba</li>
-					<li>Londrina</li>
-					<li>Maringá</li>
+					<li><i>Curitiba</i></li>
+					<li><i>Londrina</i></li>
+					<li><i>Maringá</i></li>
 				</ul>
 			</td>
-			<td>Sul</td>
 		</tr>
 	</table>
 
