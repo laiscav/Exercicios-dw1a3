@@ -1,19 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
 	<style type="text/css">
 
+        h2.center{
+	        text-align: center;
+        }
+        fieldset {
+            display: block;
+            margin-left: 1px;
+            margin-right: 1px;
+            padding-top: 0.35em;
+            padding-bottom: 0.625em;
+            padding-left: 0.75em;
+            padding-right: 0.75em;
+            border: 0px;
+        }
+        fieldset.center{
+        	text-align: center;
+        }
+        table.center{
+        	margin-right: auto;
+        	margin-left: auto;
+        }
+        td{
+        	border-spacing: 1px;
+        	padding: 1px;
+        	padding-left: 1px;
+        }
+
+        table{
+        	border-spacing: 1px;
+        	display: table;
+        	border-collapse: separate;
+        	font-family: Arial;
+        	font-size: 1em;
+
+        }
+
+
 	</style>
+
 </head>
 
 <BODY>
-	
-<h1>Formulário Cadastral Formatado</h1>
-<form>
 
-</form>
+<h2 class="center">Formulário Cadastral</h2>
+<table class= "center" style="width:500px">
+
+  <form>
+  	<tr>
+  	 <td>
+     <label for="nome">Nome:</label>
+     </td>
+     <td colspan="3" style="width:200px">
+     <input type="text" id="nome" name="nome" minleght="55" maxlength="55" required><br><br>
+     </td>
+    </tr>
+    <tr>
+     <td>	
+     <label for="rg">RG:</label>
+     </td>
+     <td>
+     <input type="number" required id="rg" name="rg" size="11" maxlength="13"><br><br>
+     </td>
+     <td>
+     <label for="cpf">CPF:</label>
+     </td>
+     <td>
+     <input type="number" required id="cpf" name="cpf"  size="13"><br><br>
+     </td>
+    </tr>
+    <tr>
+     <td>
+     <label for="sexo">Sexo:</label>
+     </td>
+     <td>
+     <select name="sexo" id="sexo">
+         <option value="feminino">Feminino</option>
+         <option value="masculino">Masculino</option>
+     </select>
+     </td>
+     <td>
+     <label for="nascimento">Data Nascimento:</label>
+     </td>
+     <td>
+     <input type="date" id="nascimento" name="nascimento" required><br><br>
+     </td>
+    </tr>
+    <tr>
+     <td>
+     <label for="endereco">Endereço:</label>
+     </td>
+     <td colspan="3">
+     <input type="text" id="endereco" name="endereco" minlenght="55" maxlength="55" required><br><br>
+     </td>
+    </tr>
+    <tr>
+    	<td>
+    		<label for:"estado civil">Estado Civil:</label>
+    	</td>  
+    	<td colspan="3">
+    		<input type="radio" name="estado civil" value="S">Solteiro <input type="radio" name="estado civil" value="C">Casado <input type="radio" name="estado civil" value="V">Viúvo
+    	</td>
+    </tr>
+    <tr>
+    	<td></td>
+     <td style="text align: right">
+     	
+     </td>
+     <td style="text align: right"><input type="reset" value="Limpar dados"></td>
+    </tr>
+  </form>
+</table>
 
 </BODY>
-
 </html>
